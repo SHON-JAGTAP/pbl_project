@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vehicle Registration | Ministry of Road Transport</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
+  <header class="header">
+    <h1>Government of India</h1>
+    <h2>MINISTRY OF ROAD TRANSPORT & HIGHWAYS</h2>
+  </header>
+
+  
+  <main class="form-container">
+    <h2>Vehicle Registration Page</h2>
+    <form id="vehicleRegistrationForm">
+      
+      <section class="form-section">
+        <h3>Owner Details</h3>
+        <label for="ownerName">Owner's Name</label>
+        <input type="text" id="ownerName" placeholder="Enter owner's full name" required />
+
+        <label for="ownerAddress">Address</label>
+        <input type="text" id="ownerAddress" placeholder="Enter address" required />
+
+        <label for="ownerPhone">Phone Number</label>
+        <input type="tel" id="ownerPhone" placeholder="Enter phone number" required />
+      </section>
+
+      
+      <section class="form-section">
+        <h3>Vehicle Details</h3>
+        <label for="vehicleNumber">Vehicle Number</label>
+        <input type="text" id="vehicleNumber" placeholder="e.g., MH12AB1234" required />
+
+        <label for="vehicleType">Vehicle Type</label>
+        <select id="vehicleType" required>
+          <option value="">Select vehicle type</option>
+          <option value="car">Car</option>
+          <option value="bike">Bike</option>
+          <option value="truck">Truck</option>
+        </select>
+
+        <label for="vehicleModel">Vehicle Model</label>
+        <input type="text" id="vehicleModel" placeholder="Enter vehicle model" required />
+      </section>
+
+      
+      <section class="form-section">
+        <h3>Upload Documents</h3>
+        <label for="idProof">ID Proof</label>
+        <input type="file" id="idProof" required />
+
+        <label for="addressProof">Address Proof</label>
+        <input type="file" id="addressProof" required />
+
+        <label for="insuranceProof">Insurance Proof</label>
+        <input type="file" id="insuranceProof" required />
+      </section>
+
+      
+      <section class="form-section">
+        <h3>Payment Details</h3>
+        <label for="cardNumber">Card Number</label>
+        <input type="text" id="cardNumber" placeholder="Enter card number" required />
+
+        <label for="expiryDate">Expiry Date</label>
+        <input type="month" id="expiryDate" required />
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" placeholder="Enter CVV" required />
+      </section>
+
+     
+      <button type="submit" class="btn">Submit Registration</button>
+    </form>
+  </main>
+
+  
+  <footer>
+    <p>
+      This Website belongs to Ministry of Road Transport & Highways (MoRTH)<br />
+      Government of India
+    </p>
+  </footer>
+</body>
+</html>
